@@ -16,6 +16,7 @@ def call(String repoUrl) {
            stage("Checkout Code") {
                steps {
                    git branch: 'main',
+                       credentialsId: 'papemor94',
                        url: "${repoUrl}"
                }
            }
