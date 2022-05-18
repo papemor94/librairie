@@ -1,5 +1,5 @@
-def call(String name = 'User') {
+def call(String name = 'User', script) {
  echo "Welcome, ${name}."
  
- echo "Current workspace is $env.WORKSPACE"
+ script.echo "Current workspace is $env.WORKSPACE"
 }
